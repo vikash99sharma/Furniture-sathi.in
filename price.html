@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/css/main.css" rel="stylesheet" />
+
+  <style>
+    body {
+      padding-top: 80px;
+    }
+
+    .navmenu ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      gap: 20px;
+    }
+
+    .navmenu ul li a {
+      text-decoration: none;
+      color: black;
+      font-weight: 500;
+    }
+
+    .mobile-nav-toggle {
+      display: none;
+    }
+
+    @media (max-width: 1199px) {
+      .navmenu {
+        display: none !important;
+      }
+
+      .mobile-nav-toggle {
+        display: inline !important;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header id="header" class="header fixed-top bg-white shadow-sm py-2 border-radius-dark">
+    <div class="container-fluid d-flex align-items-center justify-content-between">
+
+      <!-- Logo -->
+      <a href="index.html" class="logo d-flex align-items-center">
+        <h1 class="sitename mb-0">furniture-sathi</h1><span class="text-primary">.</span>
+      </a>
+
+      <!-- Center: Menu -->
+      <nav class="navmenu d-none d-xl-block">
+        <ul class="d-flex">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <!-- <li><a href="#">Services</a></li> -->
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="price.html">Pricing</a></li>
+          <!-- <li><a href="#">Team</a></li> -->
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Right Fixed Icons -->
+      <div class="d-flex align-items-center ms-auto gap-2">
+        <div class="position-relative">
+        <a href="cart.html" class="btn text-black"><i class="bi bi-cart-plus "></i></a>
+        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"> 
+          99+
+          <span class="visually-hidden">unread message</span>
+        </span>
+      </div>
+        <a href="search.html" class="btn text-black"><i class="bi bi-search"></i></a>
+        <!-- <a href="cart.html" class="btn btn-sm btn-primary text-white"><i class="bi bi-cart-plus "></i></a> -->
+        <a href="login.html" class="btn  text-black"><i class="bi bi-person"></i></a>
+        <i class="bi bi-list fs-3 mobile-nav-toggle ms-2"></i>
+      </div>
+      
+    </div>
+  </header>
+  <!-- Header End -->
+    <!-- price -->
+
+    <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+        <div class="col">
+            <div class="card mb-4 rounded-3 shadow-sm">
+                <div class="card-header py-3">
+                    <h4 class="my-0 fw-normal">starting</h4>
+                </div>
+                <div class="card-body">
+                    <h1 class="card-title pricing-card-title">$100<small class="text-body-secondary fw-light"></small>
+                    </h1>
+                    <ul class="list-unstyled mt-3 mb-4">
+                        <li>10 chair included</li>
+                        <li>2 table</li>
+                        <li>Email support</li>
+                        <li>Help center access</li>
+                    </ul> <button type="button" class="w-100 btn btn-lg btn-outline-primary">buy</button>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card mb-4 rounded-3 shadow-sm">
+                <div class="card-header py-3">
+                    <h4 class="my-0 fw-normal">Pro</h4>
+                </div>
+                <div class="card-body">
+                    <h1 class="card-title pricing-card-title">$180<small class="text-body-secondary fw-light"></small>
+                    </h1>
+                    <ul class="list-unstyled mt-3 mb-4">
+                        <li>20 chair included</li>
+                        <li>2 dining table</li>
+                        <li>1 sofa</li>
+                        <li>Help center access</li>
+                    </ul> <button type="button" class="w-100 btn btn-lg btn-primary">Get</button>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card mb-4 rounded-3 shadow-sm border-primary">
+                <div class="card-header py-3 text-bg-primary border-primary">
+                    <h4 class="my-0 fw-normal">Enterprise</h4>
+                </div>
+                <div class="card-body">
+                    <h1 class="card-title pricing-card-title">$290<small class="text-body-secondary fw-light"></small>
+                    </h1>
+                    <ul class="list-unstyled mt-3 mb-4">
+                        <li>30 chairs included</li>
+                        <li>2 bed</li>
+                        <li>5 dining table</li>
+                        <li>Help center access</li>
+                    </ul> <button type="button" class="w-100 btn btn-lg btn-primary">purchase</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+     <div class="fototer">
+        <footer class="py-3 my-4">
+            <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Home</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Features</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Pricing</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">FAQs</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">About</a></li>
+            </ul>
+            <p class="text-center text-body-secondary">©vikash 2025 Company, Inc</p>
+        </footer>
+
+
+
+    <script src="assets/vendor/bootstrap/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
